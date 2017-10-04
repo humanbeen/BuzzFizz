@@ -6,16 +6,15 @@ namespace BuzzFizz.Test
     public class BuzzFizzTests
     {
         [Test(Description = "This shows a possible way to write your tests")]
-        public void When_multiplying_numbers_by_two_then_result_is_correct()
+        [TestCase(3, 6)]
+        [TestCase(4, 8)]
+        public void When_multiplying_numbers_by_two_then_result_is_doubled(int originalValue, int expectedValue)
         {
-            // Arrange
-            var numberToDivide = 3;
-
-            // Act
-            var result = numberToDivide * 2;
+            // Arrange / Act
+            var result = originalValue * 2;
 
             // Assert
-            result.ShouldBe(6);
+            result.ShouldBe(expectedValue);
         }
 
         [Test]
