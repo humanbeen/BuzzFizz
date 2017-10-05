@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>BuzzFizz</RootNamespace>
     <AssemblyName>BuzzFizz</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -38,8 +38,15 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\ValueProvidersConstants.cs" />
+    <Compile Include="DigitsSequenceGenerators\DigitsConsistentSequenceGenerator.cs" />
+    <Compile Include="DigitsSequenceGenerators\IDigitsSequenceGenerators.cs" />
+    <Compile Include="Formatters\ThreeAndFiveDigitFormater.cs" />
+    <Compile Include="Formatters\IDigitFormater.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Printers\ConsoleDigitsPrinter.cs" />
+    <Compile Include="Printers\IDigitsPrinter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

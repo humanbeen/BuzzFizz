@@ -17,8 +17,8 @@ namespace BuzzFizz.Test
             result.ShouldBe(expectedValue);
         }
 
-        [Test]
-        public void When_the_value_is_a_multiple_of_three_then_output_should_be_buzz()
+        [Test()]
+        public void When_the_value_is_a_multiples_of_three_then_output_should_be_buzz()
         {
             // Arrange
 
