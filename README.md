@@ -9,7 +9,7 @@ For numbers which are multiples of **three** and **five** print **"BuzzFizz"**.
 
 You have 1 hour to write the program. We prefer that you fork the GitHub repository to a public location and check-in all code to this repository.
 
-Alternatievely, you can email your solution to: geoff@recruitmentgenius.com
+Alternatively, you can email your solution to: geoff@recruitmentgenius.com
 
 Notes
 -----
