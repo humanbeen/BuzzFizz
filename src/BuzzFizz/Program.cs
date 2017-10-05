@@ -2,6 +2,8 @@
 {
     using System;
 
+    using DigitsSequenceGenerators;
+
     using Formatters;
 
     using Printers;
@@ -17,9 +19,9 @@
              * For numbers which are multiples of both three and five print "BuzzFizz"
              */
 
-            IDigitsPrinter valuePrinter = new ConsoleDigitsPrinter(new ThreeAndFiveDigitFormater(), new DigitsSequenceGenerators.DigitsConsistentSequenceGenerator());
+            IDigitsPrinter digitsPrinter = new ConsoleDigitsPrinter(new ThreeAndFiveDigitFormater(), new DigitsConsistentSequenceGenerator());
 
-            valuePrinter.Print(1, 100);
+            digitsPrinter.Print(1, 100);
 
             Console.ReadLine();
         }
